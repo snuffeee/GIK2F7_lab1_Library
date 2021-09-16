@@ -84,6 +84,6 @@ public abstract class User {
     }
 
     public String toString() {
-        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber;
+        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber + "\nDebt owed: " + debt + " USD";
     }
 }

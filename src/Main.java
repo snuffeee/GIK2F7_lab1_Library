@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student(1,"Jens Holmberg","Lol123", "073-12312313");
+        Student student1 = new Student(1,"Jens Holmberg","Lol123", "073-12312313",150.5);
         student1.setAddress("lol456");
 
         // Kommentar för att se om GitHub fungerar korrekt!
