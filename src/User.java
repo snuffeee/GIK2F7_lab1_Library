@@ -3,14 +3,16 @@ public abstract class User {
     private String name;
     private String address;
     private String phoneNumber;
+    private double debt;
     private int borrowLimitGeneralBooks;
     private int borrowLimitAudioBooks;
 
-    public User(int id, String name, String address, String phoneNumber) {
+    public User(int id, String name, String address, String phoneNumber, double debt) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.debt = debt;
     }
 
     public int getId() {
@@ -45,6 +47,14 @@ public abstract class User {
         this.phoneNumber = phoneNumber;
     }
 
+    public double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(double debt) {
+        this.debt = debt;
+    }
+
     public int getBorrowLimitGeneralBooks() {
         return borrowLimitGeneralBooks;
     }
@@ -59,6 +69,18 @@ public abstract class User {
 
     public void setBorrowLimitAudioBooks(int borrowLimitAudioBooks) {
         this.borrowLimitAudioBooks = borrowLimitAudioBooks;
+    }
+
+    public void borrowBook(){
+
+    }
+
+    public void returnBook(){
+
+    }
+
+    public void payFine(){
+
     }
 
     public String toString() {
