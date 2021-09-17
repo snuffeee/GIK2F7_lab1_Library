@@ -54,7 +54,7 @@ public abstract class User {
         return fineAmount;
     }
 
-    public void setDebt(double fineAmount) {
+    public void setFineAmount(double fineAmount) {
         this.fineAmount = fineAmount;
     }
 
