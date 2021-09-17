@@ -8,7 +8,10 @@ public class Faculty extends User {
     }
 
     public void borrowBook (Book book) {
+    }
 
+    public void orderBook(){
+        
     }
 
     }
