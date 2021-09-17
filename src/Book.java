@@ -54,6 +54,6 @@ public abstract class Book {
     }
 
     public String toString() {
-        return "ID: " + id + "\nTitle: " + title + "\nAuthor: " + author + "\nPublishing Year: " + publishingYear + "\nBook status: " + bookStatus;
+        return "ID: " + id + "\nTitle: " + title + "\nAuthor: " + author + "\nPublishing Year: " + publishingYear + "\nBook status: " + bookStatus + "\n";
     }
 }

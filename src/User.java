@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public abstract class User {
@@ -85,6 +84,6 @@ public abstract class User {
     }
 
     public String toString() {
-        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber + "\nDebt owed: " + fineAmount + " USD";
+        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber + "\nDebt owed: " + fineAmount + " USD\n";
     }
 }

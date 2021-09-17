@@ -61,7 +61,7 @@ public class Library {
     // Library methods
     public void addUser (User user) {
         userList.add(user);
-        System.out.println("User was added successfully!");
+        System.out.println(user.getName() + " was added successfully to the user list!");
     }
 
     public void deleteUser (User user) {
@@ -84,6 +84,7 @@ public class Library {
 
     public void addBook (Book book) {
         bookList.add(book);
+        System.out.println(book.getTitle() + " was successfully added to the book list!");
     }
 
     public void deleteBook(Book book) {
