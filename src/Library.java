@@ -86,4 +86,20 @@ public class Library {
         bookList.add(book);
     }
 
+    public void deleteBook(Book book) {
+        if (bookList.contains(book)) {
+            bookList.remove(book);
+            System.out.println(book.getTitle() + " has been removed from the book list!");
+        }
+    }
+
+    public void updateBook(Book book, String newId, String newTitle, String newAuthor, int newPublishingYear, BookStatus newBookStatus) {
+        book.setId(newId);
+        book.setTitle(newTitle);
+        book.setAuthor(newAuthor);
+        book.setPublishingYear(newPublishingYear);
+        book.setBookStatus(newBookStatus);
+        System.out.println("The details of the book has been updated!");
+    }
+
 }

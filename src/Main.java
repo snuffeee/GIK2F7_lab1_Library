@@ -5,13 +5,19 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Create 4 book objects
+        GeneralBook book1 = new GeneralBook("A45C","Game of Thrones","George RR Martin",1996,BookStatus.AVAILABLE,694);
+        GeneralBook book2 = new GeneralBook("AD45","A Clash of Kings", "George RR Martin",1999,BookStatus.ORDERED,768);
+        AudioBook book3 = new AudioBook("AG45","A Storm of Swords","George RR Martin",2000,BookStatus.REMOVED,2857);
+
+
         Student student1 = new Student(1,"Jens Holmberg","Lol123", 07312312313,150.5);
         Student student2 = new Student(2,"Jens Holmberg","Lol123", 07312312313,150.5);
         //ArrayList<User> userList = new ArrayList<>();
        // userList.add(student1);
        // userList.add(student2);
 
-        GeneralBook book1 = new GeneralBook("AD123","Game of Thrones","George RR Martin",1996,BookStatus.AVAILABLE,567);
+        //GeneralBook book1 = new GeneralBook("AD123","Game of Thrones","George RR Martin",1996,BookStatus.AVAILABLE,567);
         //ArrayList<Book> bookList = new ArrayList<>();
         //bookList.add(book1);
 

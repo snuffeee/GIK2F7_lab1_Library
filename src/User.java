@@ -6,17 +6,17 @@ public abstract class User {
     private String name;
     private String address;
     private int phoneNumber;
-    private double debt;
+    private double fineAmount;
     private ArrayList<Book> borrowedBooks;
     private int borrowLimitGeneralBooks;
     private int borrowLimitAudioBooks;
 
-    public User(int id, String name, String address, int phoneNumber, double debt) {
+    public User(int id, String name, String address, int phoneNumber, double fineAmount) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
-        this.debt = debt;
+        this.fineAmount = fineAmount;
     }
 
     public int getId() {
@@ -51,12 +51,12 @@ public abstract class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public double getDebt() {
-        return debt;
+    public double getFineAmount() {
+        return fineAmount;
     }
 
-    public void setDebt(double debt) {
-        this.debt = debt;
+    public void setDebt(double fineAmount) {
+        this.fineAmount = fineAmount;
     }
 
     public int getBorrowLimitGeneralBooks() {
@@ -78,14 +78,13 @@ public abstract class User {
     public abstract void borrowBook(Book book);
 
     public void returnBook(){
-
     }
 
-    public void payFine(){
-
+    public void payFine(int amount) {
+        fineAmount = fineAmount - amount;
     }
 
     public String toString() {
-        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber + "\nDebt owed: " + debt + " USD";
+        return "ID: " + id + "\nName: " + name + "\nAddress: " + address + "\nPhonenumber: " + phoneNumber + "\nDebt owed: " + fineAmount + " USD";
     }
 }
