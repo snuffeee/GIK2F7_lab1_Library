@@ -41,6 +41,10 @@ public class Main {
         System.out.println("\nAll books:\n" + libraryBorlange.getBookList().toString());
         System.out.println("\nAll users:\n" + libraryBorlange.getUserList().toString());
 
+        // Create Librarian object and searchBook metod
+        Librarian librarian1 = new Librarian();
+        librarian1.searchBook(libraryBorlange,book2);
+
 
 
 

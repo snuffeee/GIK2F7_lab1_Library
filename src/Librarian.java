@@ -13,7 +13,7 @@ public class Librarian {
 
     public void searchBook(Library library, Book book) {
         if (library.getBookList().contains(book)) {
-            System.out.println(book.toString());
+            System.out.println("Your book was found:\n" + book.toString());
         } else {
             System.out.println("The book your were looking for was not found!");
         }
