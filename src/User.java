@@ -2,12 +2,12 @@ public abstract class User {
     private int id;
     private String name;
     private String address;
-    private String phoneNumber;
+    private int phoneNumber;
     private double debt;
     private int borrowLimitGeneralBooks;
     private int borrowLimitAudioBooks;
 
-    public User(int id, String name, String address, String phoneNumber, double debt) {
+    public User(int id, String name, String address, int phoneNumber, double debt) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -39,11 +39,11 @@ public abstract class User {
         this.address = address;
     }
 
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
