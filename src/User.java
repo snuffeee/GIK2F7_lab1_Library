@@ -1,9 +1,13 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public abstract class User {
     private int id;
     private String name;
     private String address;
     private int phoneNumber;
     private double debt;
+    private ArrayList<Book> borrowedBooks;
     private int borrowLimitGeneralBooks;
     private int borrowLimitAudioBooks;
 
@@ -71,9 +75,7 @@ public abstract class User {
         this.borrowLimitAudioBooks = borrowLimitAudioBooks;
     }
 
-    public void borrowBook(){
-
-    }
+    public abstract void borrowBook(Book book);
 
     public void returnBook(){
 

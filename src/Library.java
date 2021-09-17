@@ -9,13 +9,13 @@ public class Library {
     private ArrayList<User> userList;
 
 
-    public Library(String name, String address, String email, int phoneNumber, ArrayList<Book> bookList, ArrayList<User> userList) {
+    public Library(String name, String address, String email, int phoneNumber) {
         this.name = name;
         this.address = address;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.bookList = bookList;
-        this.userList = userList;
+        this.bookList = new ArrayList<Book>();
+        this.userList = new ArrayList<User>();
     }
 
     public String getName() {
@@ -54,16 +54,8 @@ public class Library {
         return bookList;
     }
 
-    public void setBookList(ArrayList<Book> bookList) {
-        this.bookList = bookList;
-    }
-
     public ArrayList<User> getUserList() {
         return userList;
-    }
-
-    public void setUserList(ArrayList<User> userList) {
-        this.userList = userList;
     }
 
     // Library methods
